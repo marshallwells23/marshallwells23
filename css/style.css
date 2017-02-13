@@ -13,3 +13,32 @@ p {
   font-family: 'Giraffey.woff', Fallback, sans-serif;
   color: blue;
 }
+
+/* SANDWICH MENU ICON AND ANIMATIONS*/
+
+.menu-holder {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu-1 .menu-2 .menu-3 {
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .menu-1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .menu-2 {
+    opacity: 0;
+}
+
+.change .menu-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
