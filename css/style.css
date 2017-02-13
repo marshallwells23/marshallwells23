@@ -1,17 +1,8 @@
-@font-face {
-  font-family: 'Giraffey.woff';
-  src: 'fonts/Giraffey.woff'
-}
-
+/* MAKE DIV NOT SCROLLABLE/FULLSCREEN */
 html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-}
-
-p {
-  font-family: 'Wire One', sans-serif;
-  color: green;
 }
 
 /* SANDWICH MENU ICON AND ANIMATIONS*/
