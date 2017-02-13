@@ -3,3 +3,7 @@ function animateMenu(x) {
 }
 
 document.querySelector('.menu-holder').addEventListener("click", animateMenu(this));
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
