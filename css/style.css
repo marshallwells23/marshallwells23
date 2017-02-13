@@ -1,5 +1,14 @@
+@font-face {
+  font-family: Giraffey.otf; src: 'fonts/Giraffey.otf'
+}
+
 html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+}
+
+p {
+  font-family: Giraffey.otf;
+  color: red;
 }
