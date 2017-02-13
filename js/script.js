@@ -1,9 +1,20 @@
-function animateMenu(x) {
-    x.classList.toggle("change");
-}
+var button = document.querySelector("#showRight");
+var icon = document.querySelector("#menuIcon");
+var showRight = document.querySelector('#showRight');
+var closeRight = document.querySelector('#closeRight');
+menuRight = document.getElementById('cbp-spmenu-s2');
 
-document.querySelector('.menu-holder').addEventListener("click", animateMenu(this));
+// button.addEventListener("click", function(){
+//   icon.classList.toggle("fa-angle-double-right");
+//   icon.classList.toggle("fa-angle-double-left");
+//   icon.classList.toggle("showRight");
+// });
 
-function myFunction(x) {
-    x.classList.toggle("change");
-}
+  showRight.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+			};
+  closeRight.onclick = function() {
+      				classie.toggle( this, 'active' );
+      				classie.toggle( menuRight, 'cbp-spmenu-open' );
+      			};

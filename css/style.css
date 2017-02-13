@@ -1,67 +1,160 @@
-/* MAKE DIV NOT SCROLLABLE/FULLSCREEN */
-html, body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-  background-color: #f2f2f2;
-}
+/****************************************
+  MENU STYLES
+ *****************************************/
+     /* GENERAL STYLING */
+    .cbp-spmenu {
+    	background: #464646;
+    	position: fixed;
+    }
 
-/* SANDWICH MENU ICON AND ANIMATIONS*/
+    .cbp-spmenu h3 {
+    	color: #fff;
+    	font-size: 1.9em;
+    	padding: 20px;
+    	margin: 0;
+    	font-weight: 300;
+    	background: #323232;
+    }
 
-.menu-holder {
-  display: inline-block;
-  cursor: pointer;
-}
+    .cbp-spmenu a {
+    	display: block;
+    	color: #fff;
+    	font-size: 1.1em;
+    	font-weight: 300;
+      text-decoration: none;
+    }
 
-.menu1 .menu2 .menu3 {
-  width: 35px;
-  height: 4px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
+    .cbp-spmenu a:hover {
+    	background: #6a6a6a;
+    }
 
-.change .menu1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
+    .cbp-spmenu a:active {
+    	background: #5a5a5a;
+    	color: #ffffff;
+    }
 
-.change .menu2 {
-    opacity: 0;
-}
+    /* ORIENTATION DEPENDANT CONTENT FOR MENU */
 
-.change .menu3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
+    .cbp-spmenu-vertical {
+    	width: 240px;
+    	height: 100%;
+    	top: 0;
+    	z-index: 1000;
+    }
 
-/* W3 EXAMPLE */
-.container {
-    display: inline-block;
-    cursor: pointer;
-}
+    .cbp-spmenu-vertical a {
+    	border-bottom: 1px solid #464646;
+    	padding: 1em;
+    }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
+    /* MENU */
+    .cbp-spmenu-right {
+    	right: -240px;
+    }
 
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
 
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
+    .cbp-spmenu-right.cbp-spmenu-open {
+    	right: 0px;
+    }
 
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+    /* MEDIA QUERIES */
+
+    @media screen and (max-width: 55.1875em){
+
+    	.cbp-spmenu-horizontal {
+    		font-size: 75%;
+    		height: 110px;
+    	}
+
+    	.cbp-spmenu-top {
+    		top: -110px;
+    	}
+
+    	.cbp-spmenu-bottom {
+    		bottom: -110px;
+    	}
+
+    }
+
+    @media screen and (max-height: 26.375em){
+    	.cbp-spmenu-right {
+    		right: -190px;
+    	}
+
+    	.cbp-spmenu-push-toright {
+    		left: 190px;
+    	}
+    }
+
+
+
+  /* MENU TRANSITIONS*/
+        .cbp-spmenu,
+        .cbp-spmenu-push {
+    	-webkit-transition: all .5s ease;
+    	-moz-transition: all .5s ease;
+    	transition: all .5s ease;
+    }
+
+
+
+/****************************************
+  MENU ICON STYLES
+ *****************************************/
+
+  /* GENERAL STYLES */
+      #showRight {
+        float: right;
+        color: #323232;
+      }
+
+/****************************************
+  DEFAULT PAGE STYLES
+*****************************************/
+  body {
+    background-color: #989898;
+    overflow: hidden;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
+  #logo {
+    float: left;
+    margin-top: -40px;
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: 'BenchNine', sans-serif;
+  }
+
+/****************************************
+  CONTACT PAGE STYLES
+*****************************************/
+
+/*CONTACT LI*/
+  #contact {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10%;
+
+  }
+
+  #contact li {
+    margin: 5%;
+    display: inline;
+  }
+
+  #contact li img {
+    max-width: 20%;
+  }
+
+  /****************************************
+    PAGE MEDIA QUERIES
+  *****************************************/
+@media (max-width: 150px){
+  #logo {
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
 }
