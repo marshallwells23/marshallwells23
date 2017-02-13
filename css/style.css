@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Giraffey.otf';
-  src: 'fonts/Giraffey.otf'
+  font-family: 'Giraffey.woff';
+  src: 'fonts/Giraffey.woff'
 }
 
 html, body {
@@ -10,6 +10,6 @@ html, body {
 }
 
 p {
-  font-family: 'Giraffey.otf', Fallback, sans-serif;
+  font-family: 'Giraffey.woff', Fallback, sans-serif;
   color: red;
 }
