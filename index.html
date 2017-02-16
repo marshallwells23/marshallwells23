@@ -4,35 +4,49 @@
 <head>
      <meta charset="UTF-8">
      <title>Marshall Wells | Home</title>
+     <meta name="viewport" content="width=device-width">
      <meta name="description" content="Welcome to my portfolio site. Take a look around then contact me for availablity. - mw">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-flex.css">
     <script src="https://use.fontawesome.com/2808318fbd.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=BenchNine|Libre+Franklin" rel="stylesheet">
      <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
      <![endif]-->
  </head>
 
  <body>
-   <header>
-     <div id="showRight"><i id="menuIcon" class="fa fa-4x fa-angle-double-left"></i></div>
-     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-  			<h3><i id="closeRight" class="fa fa-angle-double-right"></i></h3>
-  			<a href="#">Home</a>
-  			<a href="portfolio.html">Portfolio</a>
-  			<a href="contact.html">Contact</a>
-  	 </nav>
-       <div id="logo"><p>Marshall Wells</p></div>
-   </header>
+   <div class="container">
+     <!-- HEADER -->
+       <header class="main-header">
+         <a class="site-logo" href="#">
+           <p><span>M</span>arshall <span>W</span>ells</p>
+         </a>
 
+         <ul class="nav">
+           <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Profile</a></li>
+           <li><a href="#"><i class="fa fa-folder" aria-hidden="true"></i> Portfolio</a></li>
+           <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+         </ul>
+       </header>
 
-
-
+     <!-- MAIN CONTENT -->
+     <div class="main-content">
+       <img class="profile" src="img/marshall.png">
+  			<h1>Hello, I'm Marshall.</h1>
+  			<p>I grew up in a pioneer family. When my dad was 18 he moved with his family to the island of Papua New Guinea. This began a series of events that lead to who I am today. My current project is a full stack MEAN app, CapitalTEXT, designed to revolutionize direct marketing. I'd love to hear from you about your next project.</p>
+        <div class="social">
+          <h2>Social</h2>
+  			     <h4>Unfortunately social media doesn't seem to be a choice these days - you can find me on these social media sites</h4>
+             <ul class="social-sites">
+               <li><a><i class="fa fa-3x fa-twitter-square" aria-hidden="true"></i></a></li>
+               <li><a><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a></li>
+               <li><a><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a></li>
+             </ul>
+        </div>
+     </div>
+   </div>
 
    <script src="js/script.js" type="text/javascript"></script>
-   <script src="js/classie.js" type="text/javascript"></script>
-   <script src="js/modernizr.custom.js" type="text/javascript"></script>
  </body>
 
  </html>

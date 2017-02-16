@@ -1,160 +1,126 @@
-/****************************************
-  MENU STYLES
- *****************************************/
-     /* GENERAL STYLING */
-    .cbp-spmenu {
-    	background: #464646;
-    	position: fixed;
-    }
+/* --------------------------
+  Base Styles
+--------------------------- */
 
-    .cbp-spmenu h3 {
-    	color: #fff;
-    	font-size: 1.9em;
-    	padding: 20px;
-    	margin: 0;
-    	font-weight: 300;
-    	background: #323232;
-    }
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
-    .cbp-spmenu a {
-    	display: block;
-    	color: #fff;
-    	font-size: 1.1em;
-    	font-weight: 300;
-      text-decoration: none;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    .cbp-spmenu a:hover {
-    	background: #6a6a6a;
-    }
+body {
+  color: #797e83;
+  font-size: 16px;
+	margin: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
 
-    .cbp-spmenu a:active {
-    	background: #5a5a5a;
-    	color: #ffffff;
-    }
+h1 {
+  font-size: 1.6em;
+}
 
-    /* ORIENTATION DEPENDANT CONTENT FOR MENU */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
-    .cbp-spmenu-vertical {
-    	width: 240px;
-    	height: 100%;
-    	top: 0;
-    	z-index: 1000;
-    }
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
 
-    .cbp-spmenu-vertical a {
-    	border-bottom: 1px solid #464646;
-    	padding: 1em;
-    }
+.container {
+  width: 100%;
+  margin: auto;
+}
 
-    /* MENU */
-    .cbp-spmenu-right {
-    	right: -240px;
-    }
+.main-content {
+  padding: 1em;
+}
 
+.main-header {
+  width: 100%;
+  box-shadow: 0px 3px 5px rgba(5, 5, 5, 0.2);
+}
 
-    .cbp-spmenu-right.cbp-spmenu-open {
-    	right: 0px;
-    }
+.profile {
+  border-radius: 50%;
+  max-width: 200px;
+  display: block;
+  border: 3px solid rgba(255 255 255 .2);
+  box-shadow: 0px 3px 5px rgba(5, 5, 5, 0.3);
+  margin-right: auto;
+  margin-left: auto;
+}
 
-    /* MEDIA QUERIES */
+.social-sites {
+  text-align: center;
+}
 
-    @media screen and (max-width: 55.1875em){
+.social-sites li a {
+  color: #797e83;
+}
 
-    	.cbp-spmenu-horizontal {
-    		font-size: 75%;
-    		height: 110px;
-    	}
+.social-sites li:hover a {
+  color: black;
+}
 
-    	.cbp-spmenu-top {
-    		top: -110px;
-    	}
+/* --------------------------
+  Media Queries
+--------------------------- */
 
-    	.cbp-spmenu-bottom {
-    		bottom: -110px;
-    	}
+@media (min-width: 769px) {
+	p {
+		-webkit-column-count: 2;
+		-webkit-column-gap: 2.5em;
 
-    }
+		-moz-column-count: 2;
+		-moz-column-gap: 2.5em;
 
-    @media screen and (max-height: 26.375em){
-    	.cbp-spmenu-right {
-    		right: -190px;
-    	}
+		column-count: 2;
+		column-gap: 2.5em;
+	}
 
-    	.cbp-spmenu-push-toright {
-    		left: 190px;
-    	}
-    }
-
-
-
-  /* MENU TRANSITIONS*/
-        .cbp-spmenu,
-        .cbp-spmenu-push {
-    	-webkit-transition: all .5s ease;
-    	-moz-transition: all .5s ease;
-    	transition: all .5s ease;
-    }
-
-
-
-/****************************************
-  MENU ICON STYLES
- *****************************************/
-
-  /* GENERAL STYLES */
-      #showRight {
-        float: right;
-        color: #323232;
-      }
-
-/****************************************
-  DEFAULT PAGE STYLES
-*****************************************/
-  body {
-    background-color: #989898;
-    overflow: hidden;
-    font-family: 'Libre Franklin', sans-serif;
-  }
-
-  #logo {
+  .profile {
     float: left;
-    margin-top: -40px;
-    margin-left: 25px;
-    font-size: 50px;
-    font-family: 'BenchNine', sans-serif;
+    margin: 1em;
   }
 
-/****************************************
-  CONTACT PAGE STYLES
-*****************************************/
-
-/*CONTACT LI*/
-  #contact {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding-top: 10%;
-
+  .social {
+    padding-top: 3em;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  #contact li {
-    margin: 5%;
-    display: inline;
+  .social h4 {
+    text-align: justify;
   }
 
-  #contact li img {
-    max-width: 20%;
+
+  .social-sites li {
+    float: left;
+    margin: 1em;
   }
 
-  /****************************************
-    PAGE MEDIA QUERIES
-  *****************************************/
-@media (max-width: 150px){
-  #logo {
-    float: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+}
+
+@media (min-width: 1025px) {
+	.container {
+		width: 100%
+	}
+
+  .main-content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile {
+    margin: 2em;
   }
 }
